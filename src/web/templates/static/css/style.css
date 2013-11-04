@@ -1,0 +1,19 @@
+.ask-btn {
+    position: fixed;
+    right: 60px;
+    top: 32px;
+}
+
+.questions-table {
+    line-height: 30px;
+    width: 70%;
+}
+
+.question-field {
+    height: 192px;
+    width: 834px;
+}
+
+.question-input {
+	width: 834px;
+}

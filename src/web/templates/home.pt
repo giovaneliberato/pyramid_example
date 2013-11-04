@@ -1,0 +1,12 @@
+<div metal:use-macro="layout">
+    <div metal:fill-slot="content">
+    	<table class='table-striped questions-table'>
+    		<tbody>
+				<tr tal:repeat="q questions">
+					<th>${len(q['answers'])} answers</th>
+					<th><a href="question?id=${q['_id']}">${q['title']}</a></th>
+				</tr>
+			</tbody>
+		</table>
+    </div>
+</div>
