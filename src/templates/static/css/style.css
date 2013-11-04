@@ -1,5 +1,5 @@
 .ask-btn {
-    position: fixed;
+    position: absolute;
     right: 60px;
     top: 32px;
 }
@@ -9,7 +9,11 @@
     width: 70%;
 }
 
-.question-field {
+.answers-table {
+    width: 100%;
+}
+
+.text-field {
     height: 192px;
     width: 834px;
 }

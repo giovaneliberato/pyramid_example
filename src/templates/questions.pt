@@ -1,0 +1,27 @@
+<div metal:use-macro="layout">
+    <div metal:fill-slot="content">
+    	<br>
+    	<span><h3>${question['title']}</h3> - <a href="#answer">answer this question</a></span>
+    	<p>${question['text']}</p>
+    	<span tal:repeat="tag question['tags']"> ${tag}</span>
+
+    	<br><br>
+    	<h4>Answers</h4>
+    	<span id='answers'>
+    		<table class='table-striped questions-table'>
+    		<tbody>
+				<tr tal:repeat="a answers">
+					<th><a class="up-vote" href="#" data-id="${a['_id']}">/\</a> - ${a['answer']} </th>
+				</tr>
+			</tbody>
+		</table>
+		<span><br><br>
+		<section id="answer">
+			<h4>Answer this question</h4>
+			<textarea id='answer-field' class='text-field'></textarea><br>
+			<button id='answer-btn' data-id="${question['_id']}">Answer</button>
+			<br><br><br>
+		</section>    	
+
+    </div>
+</div>

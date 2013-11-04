@@ -4,7 +4,7 @@ from pyramid.config import Configurator
 def main():
     config = Configurator()
     config.include('pyramid_chameleon')
-    config.scan("views.forum")
+    config.scan("views")
     config.add_static_view('static', 'templates/static')
     app = config.make_wsgi_app()
     return app

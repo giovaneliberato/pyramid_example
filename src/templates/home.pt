@@ -3,7 +3,7 @@
     	<table class='table-striped questions-table'>
     		<tbody>
 				<tr tal:repeat="q questions">
-					<th>${len(q['answers'])} answers</th>
+					<th>0 answers</th>
 					<th><a href="question?id=${q['_id']}">${q['title']}</a></th>
 				</tr>
 			</tbody>
