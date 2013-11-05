@@ -20,7 +20,7 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="page-header">
-					<a href='/'><h1>Pyramid overflow</h1></a>
+					<h1><a href='/'>Pyramid overflow </a><small> Answers for developers' questions</small></h1> 
 					<div class='ask-btn'>
 						<a href='/ask'><h3>Ask Question</h3></a>
 					    <form class="form-search" action='search'>
@@ -28,7 +28,7 @@
 						    <button type="submit" class="btn"><i class='icon icon-search'></i></button>
 					    </form>
 					 </div>
-			</div>
+				</div>
 			<div metal:define-slot="content"></div>
 			</div>
 		</div>

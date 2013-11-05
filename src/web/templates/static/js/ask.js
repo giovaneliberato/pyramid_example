@@ -1,15 +1,15 @@
 var wrapAnswer = function(answer, answer_id){
 	return '<div class="row-fluid"><div class="span1">'+
-				'<h1 class="vote-numbers">0</h1>'+
-				'<a class="vote" href="#" data-id="'+
-				answer_id +'" data-vote="UP"><span class="label label-success">'+
-				'<i class="icon icon-white icon-plus"></i></span></a>'+
-				'<a class="vote" href="#" data-id="'+ answer_id +'" data-vote="DOWN">'+
-				'<span class="label label-important"><i class="icon icon-white icon-minus"></i></span></a>'+
-				'</div>'+
-				'<div class="span10">'+
-				'<p>' + answer + '</p>'+
-				'</div></div>';
+			'<h1 class="vote-numbers">0</h1>'+
+			'<a class="vote" href="#" data-id="'+
+			answer_id +'" data-vote="UP"><span class="label label-success">'+
+			'<i class="icon icon-white icon-plus"></i></span></a>'+
+			'<a class="vote" href="#" data-id="'+ answer_id +'" data-vote="DOWN">'+
+			'<span class="label label-important"><i class="icon icon-white icon-minus"></i></span></a>'+
+			'</div>'+
+			'<div class="span10">'+
+			'<p>' + answer + '</p>'+
+			'</div></div>';
 }
 
 var vote = function(){

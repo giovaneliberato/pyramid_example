@@ -1,5 +1,13 @@
 <div metal:use-macro="layout">
     <div metal:fill-slot="content">
+    	<br><br>
+    	<div class="hero-unit" style="text-align: center;" tal:condition="not questions.count() and not search">
+    		<h3>No questions yet. How about 
+    		<a href="/ask">ask something?</a></h3>
+    	</div>
+    	<div class="hero-unit" style="text-align: center;" tal:condition="not questions.count() and search">
+    		<h3>0 results found :(</h3>
+    	</div>
     	<table class='table-striped questions-table'>
     		<tbody>
 				<tr tal:repeat="q questions">
