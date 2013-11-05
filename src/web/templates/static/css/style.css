@@ -1,0 +1,23 @@
+.ask-btn {
+    position: absolute;
+    right: 60px;
+    top: 32px;
+}
+
+.questions-table {
+    line-height: 30px;
+    width: 70%;
+}
+
+.answers-table {
+    width: 100%;
+}
+
+.text-field {
+    height: 192px;
+    width: 834px;
+}
+
+.question-input {
+	width: 834px;
+}

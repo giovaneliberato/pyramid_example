@@ -1,0 +1,17 @@
+<div metal:use-macro="layout">
+    <div metal:fill-slot="content">
+    	<form method="POST" action='/save_question'>
+    		<label>Question title</label>
+			<input type="text" class='question-input' name='title'>
+			<br><br>
+			<label>Question text</label>
+			<textarea class='text-field' name='text'></textarea><br>
+			<br><br>
+			<label>Question tags</label>
+			<input type="text" class='question-input' name='tags'><br>
+			<small>Use comma separeted values</small>
+			<br><br>
+			<button type="submit" class="btn">Ask</button>
+    	</form>
+    </div>
+</div>
