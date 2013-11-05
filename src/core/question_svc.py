@@ -16,7 +16,8 @@ def save_answer(question_id, answer):
 	answer_id = db.answers.insert({'answer': answer, 'votes': 0, 'question_id': ObjectId(question_id)})
 	question = db.questions.find_one(ObjectId(question_id))
 	question['answers'].append(answer_id)
-	db.questions.save(questions)
+	db.questions.save(question)
+	return answer_id.__str__()
 
 
 def vote(answer_id, vote):

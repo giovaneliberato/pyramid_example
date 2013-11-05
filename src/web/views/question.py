@@ -17,8 +17,8 @@ def show_question(request):
 def answer_question(request):
 	question_id = request.POST['question_id']
 	answer = request.POST['answer']
-	question_svc.save_answer(question_id, answer)
-	return Response()
+	answer_id = question_svc.save_answer(question_id, answer)
+	return Response(body=json.dumps({'answer_id': answer_id}))
 
 
 @view_config(name='vote_answer')
