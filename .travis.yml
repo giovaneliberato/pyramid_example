@@ -7,7 +7,3 @@ install: pip install -r requirements.txt --use-mirrors
 services: mongodb
 
 script: test/run_tests.sh
-
-notifications:
-    email:
-        - giovaneliberato@gmail.com
