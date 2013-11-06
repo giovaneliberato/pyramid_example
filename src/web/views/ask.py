@@ -8,11 +8,12 @@ from core import ask_svc
 def ask(request):
     return {"layout": base_layout()}
 
+
 @view_config(name='save_question')
 def save_question(request):
-	params_dict = request.params.mixed()
-	params_dict['tags'] = params_dict['tags'].replace(' ', '').split(',')
-	params_dict['votes'] = 0
-	question_id = ask_svc.save_question(params_dict)
-	red = 'question?id=%s' % question_id
-	return HTTPFound(location=red)
+    params_dict = request.params.mixed()
+    params_dict['tags'] = params_dict['tags'].replace(' ', '').split(',')
+    params_dict['votes'] = 0
+    question_id = ask_svc.save_question(params_dict)
+    red = 'question?id=%s' % question_id
+    return HTTPFound(location=red)
