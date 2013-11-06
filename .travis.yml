@@ -4,7 +4,7 @@ python:
 install:
     - pip install -r requirements_test.txt --use-mirrors
 services:
-	-mongodb
+	- mongodb
 script:
     - test/run_tests.sh
 notifications:
