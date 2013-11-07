@@ -24,7 +24,6 @@ def save_answer(question_id, answer):
 
 
 def vote(answer_id, vote):
-    print answer_id
     db = connection_factory.create()
     answer = db.answers.find_one({'_id': ObjectId(answer_id)})
     if vote == 'UP':

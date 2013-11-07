@@ -74,6 +74,5 @@ class TestQuestionCore(MongoTestCase):
         self.assertEqual(5, answer['votes'])
 
         vote_numbers = question_svc.vote(answer_id.__str__(), 'DOWN')
-        time.sleep(0.5)
         answer = c.answers.find_one({'_id': answer_id})
         self.assertEqual(4, answer['votes'])
